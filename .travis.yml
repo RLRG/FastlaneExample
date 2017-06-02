@@ -1,7 +1,10 @@
 osx_image: xcode8.3
 language: objective-c
 install:
-  - bundle install
+- bundle install
 script:
-  - bundle exec fastlane test
-  - bundle exec fastlane ui_test
+- bundle exec fastlane unit_test
+- bundle exec fastlane ui_test
+env:
+  global:
+    secure: 6KjBAXkNjx9B+O+bZMXQqcKe3TycKi5wPv51OtClWxwjJkdL0mF4l2s6wzCY3PLbRK9jcKfXdMuVWcnj9tM+S4GZDkhv4fxfpF+8qz8KVH1nXUgd3EniwlIClheOHM6X0Gl7cD1rynagmizWwCR2FxsLVU6IIMhOOkwE7bjM4lDa923LvGm9Vz1iN29GKQCdn1qR3J487KUobkgp+uTRvrWERTRqYwchQOGBzIraoswrljfav8ppKx1+IVp/5fUjPwvVMQQEk7YGDMn7ztU4j9sJZVWIZq57UhJNYw4+qIY1sw0pZiQEF7XJptxhhQfDJeecWhzmxbQovxNSl9pDK/kY54X4QiV5rTu3sHj3yf6TLkH+BPgPu5Ilxchy0Yg5JCVqFBNYguG1D+V8ijsN1AvQpOGuD8WuAY2PiVeTpnnWgTyKZYJJeK4UWrsnJwgvSB7XO8a+IU9/Rq5Ws5rasxE5q7LVR52gfp1KauoNxFZNBm7ACYGsnJOoaoeWpnLGqQ83qVPUD2AN776LcNj7/KWwQ7uWLOjRaeLYcfB7KwfvAsWZjt0vEh8E09O6cykLRwgKssHfbGHTSKAkP/0m0Y/r4s/5njFBBozkwpFWYEqa81cVcETggCoCH9jbryzwScj/+JZLoETFwMHIy8KuMTYp11R5y7aP+lxYKyC9exU=
